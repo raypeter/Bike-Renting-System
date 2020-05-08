@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Cormfort bike</title>
+	<link rel="stylesheet" type="text/css" href="bmxbike.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<style>
+p{ font-style: italic}
+
+</style>
+</head>
+<body>
+<img src = "com.jpg" width ="100%">
+
+
+
+<h1> CORMFORT BIKES KEY FEATURES</h1>
+<P> They typically have a modified mountain bike frame with a tall head tube to provide an upright riding position, 26-inch (ISO 559) or 28-inch (ISO 622) wheels, and 1.75-or-1.95-inch (44 or 50 mm) "middleweight" smooth or semi-slick tires.</P>
+
+<button onClick="myTimer = setInterval(myCounter, 1000); showMessage();" style="display: block; margin: 0 auto;" >Rent BIke!</button><br>
+
+
+<p id="count" style="padding-left: 350px; margin:0;display:inline;float:center">Click on the button above and timer automatically starts.</p><br>
+<button onClick="clearInterval(myTimer); rentingcost();" style="background: brown; display: block; margin: 0 auto;">Return Bike</button><br>
+
+
+
+
+<script>
+function showMessage(){
+	window.alert("You have started renting the comfort bike and counter is initiated");
+}
+var c = 0;
+function myCounter() {
+	
+  document.getElementById("count").innerHTML = ++c;
+}
+	function rentingcost() {
+		var x = c*50/3600;
+		var n = x.toFixed(2);
+	document.getElementById("cost").innerHTML = n;
+	
+}
+
+</script>
+<div>
+<h5 style="margin:0;display:inline; padding-left: 300px; " >Cost = </h5>
+<h5 type="text" style="padding-left: 350px;margin:0;display:inline; " id="cost"></h5>
+<p style="padding-right: 300px;margin:0;display:inline; float: center">Ksh</p>
+</div>
+</body>
+</ht

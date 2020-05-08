@@ -1,0 +1,28 @@
+<?php
+require dbconfig'dbconfig/config.php';
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bike Renting System</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+	<div class="signin">
+		<form action="index.php" method="post">
+			<h2 style="color:white">Log In</h2>
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="pass" placeholder="Password"><br><br>
+			<a href="#" ><input type="button" value="Log In"></a><br><br>
+			<br><br><br><br>
+	<p >Don't have an account?<a href="registration.php" style="color: yellow">&nbsp;Sign up</a><p>
+	</form> 
+</div>
+ 
+  	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  </body>
+  </html>

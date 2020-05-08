@@ -1,0 +1,22 @@
+body
+{
+
+}
+img
+{
+
+	width: 100%;
+}
+button
+{
+	
+	box-shadow:5px 10px #888888; 
+	border: none;
+	width: 190px;
+	color: #000;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+}

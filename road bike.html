@@ -1,0 +1,50 @@
+<HTML>
+<head>
+<title>Road Bike</title>
+	<link rel="stylesheet" type="text/css" href="bmxbike.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<style>
+p{ font-style: italic}
+
+</style>
+</head>
+<body >
+<img src = "bike.jpg" width = "100%">
+
+<h1>ROAD BIKE KEY FEATURES</H1>
+
+<P>The tires are narrow, high-pressure (100 psi (700 kPa) or higher), and smooth to decrease rolling resistance
+<P>The handlebars are bent ("dropped") to allow the rider position to be leaned forward and downward, which reduces the forward vertical cross sectional area and thus highly reduces the air resistance
+<P>They usually use derailleur gears; however, single-speed and fixed-gear varieties exist
+<P>They either use disc brakes or rim brakes (although there might be technical differences, for example road bike calliper brakes use shorter and wider pads than mountain bike cantilevers)
+<P>The bicycle is of a lightweight construction<br>
+<button onClick="myTimer = setInterval(myCounter, 1000)" style="display: block; margin: 0 auto;" >Rent BIke!</button><br>
+
+
+<p id="count" style="padding-left: 350px; margin:0;display:inline;float:center">Click on the button above and timer automatically starts.</p><br>
+<button onClick="clearInterval(myTimer); rentingcost();" style="background: brown; display: block; margin: 0 auto;">Return Bike</button><br>
+
+
+
+
+<script>
+var c = 0;
+function myCounter() {
+  document.getElementById("count").innerHTML = ++c;
+}
+	function rentingcost() {
+		var x = c*50/3600;
+		var n = x.toFixed(2);
+	document.getElementById("cost").innerHTML = n;
+	
+}
+
+</script>
+<div>
+<h5 style="margin:0;display:inline; padding-left: 300px; " >Cost = </h5>
+<h5 type="text" style="padding-left: 350px;margin:0;display:inline; " id="cost"></h5>
+<p style="padding-right: 300px;margin:0;display:inline; float: center">Ksh</p>
+</div>
+
+</body >
+</html>

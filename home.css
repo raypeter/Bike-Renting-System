@@ -1,0 +1,37 @@
+body
+{
+	background: url(img/ph.jpg);
+	background-size: cover;
+}
+a
+{
+	color: yellow;
+}
+img
+{
+	float: center;
+	vertical-align: middle;
+	padding-left: 250px;
+	width: 75%;
+	height: 450px;
+}
+
+/* Container holding the image and the text */
+/*.container {
+  position: relative;
+}*/
+
+/* Bottom right text */
+.text-block {
+  position: relative;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+  padding-right: 20px;
+  align-self: center;
+}
+hr
+{
+	border: 3px solid white;
+}

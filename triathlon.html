@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bmxbike.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<title>Triathlon bike</title>
+<style>
+p{ font-style: italic}
+
+</style>
+</head>
+<body >
+<img src = "triath.jpg" width ="50%">
+<img src = "tria.webp" width ="50%" align = right>
+
+
+<h1> TRIATHLON KEY FEATURES</h1>
+<P> wide tires</P>
+<P>cormfortable seat</P>
+
+<button onClick="myTimer = setInterval(myCounter, 1000)" style="display: block; margin: 0 auto;" >Rent BIke!</button><br>
+
+
+<p id="count" style="padding-left: 350px; margin:0;display:inline;float:center">Click on the button above and timer automatically starts.</p><br>
+<button onClick="clearInterval(myTimer); rentingcost();" style="background: brown; display: block; margin: 0 auto;">Return Bike</button><br>
+
+
+
+
+<script>
+var c = 0;
+function myCounter() {
+  document.getElementById("count").innerHTML = ++c;
+}
+	function rentingcost() {
+		var x = c*50/3600;
+		var n = x.toFixed(2);
+	document.getElementById("cost").innerHTML = n;
+	
+}
+
+</script>
+<div>
+<h5 style="margin:0;display:inline; padding-left: 300px; " >Cost = </h5>
+<h5 type="text" style="padding-left: 350px;margin:0;display:inline; " id="cost"></h5>
+<p style="padding-right: 300px;margin:0;display:inline; float: center">Ksh</p>
+</div>
+</body>
+</html>
